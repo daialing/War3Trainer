@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<!-- 输出为 Windows 桌面应用程序 (无控制台窗口) -->
+		<OutputType>WinExe</OutputType>
+
+		<!-- 目标框架锁定为 .NET 10.0-windows，最低支持 OS 设为 Win 7 (6.1) -->
+		<TargetFramework>net10.0-windows</TargetFramework>
+		<SupportedOSPlatformVersion>6.1</SupportedOSPlatformVersion>
+
+		<!-- 允许向前滚进：只要用户电脑上有 .NET 10.x 或更高的主版本，均可直接运行 -->
+		<RollForward>Major</RollForward>
+
+		<!-- WinForms 桌面支持与内存安全 -->
+		<UseWindowsForms>true</UseWindowsForms>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+
+		<!-- 针对魔兽争霸 32 位进程读写，锁定 x86 架构 -->
+		<PlatformTarget>x86</PlatformTarget>
+		<RuntimeIdentifier>win-x86</RuntimeIdentifier>
+
+		<!-- 语言与编译选项 -->
+		<Nullable>disable</Nullable>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+
+		<!-- 打包模式：输出单个 exe，不打包 .NET 运行时 (小体积 ~1MB-3MB) -->
+		<PublishSingleFile>true</PublishSingleFile>
+		<SelfContained>false</SelfContained>
+		<EnableCompressionInSingleFile>false</EnableCompressionInSingleFile>
+
+		<!-- 屏蔽已废弃警告与平台兼容警告 -->
+		<NoWarn>$(NoWarn);SYSLIB0003;SYSLIB0004;SYSLIB0051;CS0672;CA1416</NoWarn>
+	</PropertyGroup>
+
+	<!-- ReaLTaiizor UI 控件库 -->
+	<ItemGroup>
+		<PackageReference Include="ReaLTaiizor" Version="3.8.2.1" />
+	</ItemGroup>
+
+</Project>
