@@ -2,7 +2,7 @@
 
 
 
-![Screenshot](https://raw.githubusercontent.com/tctianchi/War3Trainer/master/Screenshot.png)
+<img width="714" height="743" alt="War3Trainer_pg5UZiOqaY" src="https://github.com/user-attachments/assets/d62ad35b-428e-4879-afbe-2d2aec5276f1" />
 
 ## 下载
 
