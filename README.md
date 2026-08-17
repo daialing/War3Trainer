@@ -7,6 +7,7 @@
 ## 下载
 
 请移步[release](https://github.com/tctianchi/War3Trainer/releases)页。
+没版本更新就是增加了1.27.1.7085支持
 AI重构后的在：
 https://github.com/daialing/War3Trainer-ai 
 
