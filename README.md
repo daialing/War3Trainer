@@ -7,6 +7,8 @@
 ## 下载
 
 请移步[release](https://github.com/tctianchi/War3Trainer/releases)页。
+AI重构后的在：
+https://github.com/daialing/War3Trainer-ai 
 
 ## 修改器简介
 
